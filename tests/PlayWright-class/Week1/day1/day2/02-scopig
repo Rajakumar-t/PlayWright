@@ -1,0 +1,49 @@
+import { log } from "console";
+
+
+//var is a global variable and it can be accessed and it get leaked if you can see this ins block
+var genderType ="male"; // gloabal declaration 
+
+function printGender(){
+let colour ="brown"
+if(genderType.startsWith("female")){
+    var age = 30;
+    let colour ="pink"
+    console.log("She like" + colour );
+}
+    else {
+        var age = 35;
+        console.log("He is "+age +"  He like colou  "+colour);
+        
+    }
+    console.log("age leaking from blok ="+ age);
+    
+}
+printGender()
+console.log(genderType);
+
+//this is code from the instrustor 
+
+var genderType = "female"; // global declaration
+
+
+function printGender1(){
+
+
+let color="brown" //function scope
+
+
+if(genderType.startsWith("female")){
+    var age=30;
+    let color ="pink"
+    console.log("She/her favourite colour"+color);
+}else{
+    var age=35;
+    console.log("He/him:"+color);
+}
+console.log(age);
+}
+
+
+printGender1()
+console.log(genderType);
