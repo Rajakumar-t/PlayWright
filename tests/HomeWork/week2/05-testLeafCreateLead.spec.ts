@@ -5,7 +5,7 @@ import { assert } from 'console';
 import { verify } from 'crypto';
 
 // =============================================
-// ✅ Test Case 1: Create a New Lead in Salesforce
+//  Test Case 1: Create a New Lead in Salesforce
 // =============================================
 test('creating test lead', async ({ page }) => {
 
@@ -55,12 +55,12 @@ test('creating test lead', async ({ page }) => {
     console.log(name);
 
     // Step 12: Pause briefly for observation
-   // await page.waitForTimeout(10000);
+    // await page.waitForTimeout(10000);
 });
 
 
 // ==========================================================
-// ✅ Test Case 2: Create and Edit Lead in LeafTaps CRM
+//  Test Case 2: Create and Edit Lead in LeafTaps CRM
 // ==========================================================
 test('creating a lead', async ({ page }) => {
 
@@ -107,8 +107,9 @@ test('creating a lead', async ({ page }) => {
     // Step 12: Optional wait to observe updated lead
     await page.waitForTimeout(2000)
 })
-
+// ==========================================================
 // Test 3: Create a new Individual in Salesforce
+// ==========================================================
 test(`Create Individuals`, async ({ page }) => {
 
     // Step 1: Navigate to Salesforce login page
